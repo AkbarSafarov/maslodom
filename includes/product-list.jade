@@ -1,0 +1,172 @@
+include _header.jade
+<div class="page_content_wrapper">
+    <div class="block_inner">
+        <div class="path_block">
+            <a href="">Главная</a><span>/</span>Каталог товаров
+        </div>
+        <div class="panel_top">
+            <h1>Каталог товаров</h1>
+            <div class="soart_block">
+                <div class="name">Сортировать по:</div>
+                <div class="soart_main">
+                    <div class="soart_name">По популярности</div>
+                    <ul class="soart_list">
+                        <li><a href="" class="active">По популярности</a></li>
+                        <li><a href="">По умолчанию</a></li>
+                        <li><a href="">По наличию</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="content_inner_wrapper product_list_page">
+            <div class="left_panel">
+                <div class="categor_list">
+                    <ul>
+                        <li><a href="">Сервисные продукты</a></li>
+                        <li class="opened"><a href="">Моторные масла</a></li>
+                        <li><a href="">Трансмиссионные масла</a></li>
+                        <li><a href="">Пластичные смазки</a></li>
+                        <li><a href="">Дизельные двигатели грузовиков</a></li>
+                        <li><a href="">Все товары в каталоге</a></li>
+                    </ul>
+                </div>
+                <div class="filter_panel">
+                    <div class="filter_btn_mobile">Парметры товаров</div>
+                    <div class="filter_panel_inner">
+                        <div class="filter_field active">
+                            <div class="filter_field_name">Тип масла</div>
+                            <div class="filter_field_body">
+                                <ul>
+                                    <li><label><input type="checkbox"><i></i>Премиальное синтетическое</label></li>
+                                    <li><label><input type="checkbox"><i></i>Синтетическое</label></li>
+                                    <li><label><input type="checkbox"><i></i>Полусинтетическое</label></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="filter_field active">
+                            <div class="filter_field_name">Двигатель</div>
+                            <div class="filter_field_body">
+                                <ul>
+                                    <li><label><input type="checkbox"><i></i>Бензиновый</label></li>
+                                    <li><label><input type="checkbox"><i></i>Газовый</label></li>
+                                    <li><label><input type="checkbox"><i></i>Дизельный</label></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="filter_field active">
+                            <div class="filter_field_name">Вязкость по SAE</div>
+                            <div class="filter_field_body">
+                                <ul>
+                                    <li><label><input type="checkbox"><i></i>OW-20</label></li>
+                                    <li><label><input type="checkbox"><i></i>OW-30</label></li>
+                                    <li><label><input type="checkbox"><i></i>5W-30</label></li>
+                                    <li><label><input type="checkbox"><i></i>5W-40</label></li>
+                                    <li><label><input type="checkbox"><i></i>10W-40</label></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="filter_field">
+                            <div class="filter_field_name">Бренд</div>
+                            <div class="filter_field_body">
+                                <ul>
+                                    <li><label><input type="checkbox"><i></i>Название бренда</label></li>
+                                    <li><label><input type="checkbox"><i></i>Второй бренд</label></li>
+                                    <li><label><input type="checkbox"><i></i>Третий бренд</label></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="filter_field">
+                            <div class="filter_field_name">Классификация по API</div>
+                            <div class="filter_field_body">
+                                <ul>
+                                    <li><label><input type="checkbox"><i></i>Название бренда</label></li>
+                                    <li><label><input type="checkbox"><i></i>Второй бренд</label></li>
+                                    <li><label><input type="checkbox"><i></i>Третий бренд</label></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="filter_field">
+                            <div class="filter_field_name">ACEA</div>
+                            <div class="filter_field_body">
+                                <ul>
+                                    <li><label><input type="checkbox"><i></i>Название бренда</label></li>
+                                    <li><label><input type="checkbox"><i></i>Второй бренд</label></li>
+                                    <li><label><input type="checkbox"><i></i>Третий бренд</label></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="filter_field">
+                            <div class="filter_field_name">ILSAC</div>
+                            <div class="filter_field_body">
+                                <ul>
+                                    <li><label><input type="checkbox"><i></i>Название бренда</label></li>
+                                    <li><label><input type="checkbox"><i></i>Второй бренд</label></li>
+                                    <li><label><input type="checkbox"><i></i>Третий бренд</label></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="prices_filter">
+                            <div class="filter_field_name">Цена</div>
+                            <div class="filter_field_body">
+                                <div class="prices_field">
+                                    <div class="from"><input type="text" value="От 1000"></div>
+                                    <span></span>
+                                    <div class="to"><input type="text" value="До 30 000"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="fiter_btn_result">Показать</button>
+                        <div class="filter_btn_reset">Сбросить фильтр</div>
+                        <div class="result_block">
+                            <div class="text">Найдено 10 товаров</div>
+                            <a href="" class="link">Показать</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right_content">
+                <div class="product_list">
+                    include _product.jade
+                    include _product.jade
+                    include _product.jade
+                    include _product.jade
+                    include _product.jade
+                    include _product.jade
+                    include _product.jade
+                    include _product.jade
+                    include _product.jade
+                    include _product.jade
+                    include _product.jade
+                    include _product.jade
+                </div>
+                <div class="btn_nore_product">посмотреть еще</div>
+                <div class="page_list">
+                    <ul>
+                        <li><a href="" class="arrow arrow_left"></a></li>
+                        <li><span class="number">1</span></li>
+                        <li><a href="" class="number">2</a></li>
+                        <li><a href="" class="number">3</a></li>
+                        <li><a href="" class="number">4</a></li>
+                        <li><a href="" class="arrow arrow_right"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="popular_products">
+    <div class="block_inner">
+        <div class="title_block">
+            <div class="title">Популярные товары</div>
+            <a href="" class="btn_button border_arrow">Все товары категории</a>
+        </div>
+        <div class="inner">
+            include _product.jade
+            include _product.jade
+            include _product.jade
+            include _product.jade
+        </div>
+        <a href="" class="btn_button border_arrow">Все товары категории</a>
+    </div>
+</div>
+include _footer.jade

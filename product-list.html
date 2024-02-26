@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Тайтл</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/swiper-bundle.min.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/styles.css">
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous" ></script>
+</head>
+<body>
+<div class="site_wrapper">
+<header class="header inner_page">
+<div class="header_top">
+<div class="block_inner">
+<div class="city_block">
+<div class="name">Новосибирск</div>
+<ul class="city_list">
+<li><a href="">Томск</a></li>
+<li><a href="">Красноярск</a></li>
+<li><a href="">Екатеринбург</a></li>
+</ul>
+</div>
+<div class="logo_mob">
+<a href=""><img src="files/logo-mob.png" alt=""></a>
+</div>
+<div class="menu_top">
+<ul>
+<li><a href="">Главная</a></li>
+<li><a href="">О нас</a></li>
+<li><a href="">Оплата и доставка</a></li>
+<li><a href="">Акции</a></li>
+<li><a href="">Новости</a></li>
+<li><a href="">Контакты</a></li>
+</ul>
+</div>
+<div class="phone">
+<a href="tel:8 (3852) 50-60-91"><span>8 (3852)</span> 50-60-91</a>
+</div>
+</div>
+</div>
+<div class="header_bottom">
+<div class="block_inner">
+<div class="logo">
+<a href="#">
+<img src="files/logo.png" alt="">
+<span>продажа автомобильных масел</span>
+</a>
+</div>
+<div class="btn_catalog">Каталог</div>
+<div class="search_block">
+<form action="">
+<input type="submit" class="search_btn">
+<input type="text" class="search_input" placeholder="Поиск по каталогу">
+</form>
+</div>
+<a href="" class="wish_btn"></a>
+<a href="" class="login_btn"></a>
+<a href="" class="cart_mini"><span class="count">32</span></a>
+</div>
+<div class="menu_top">
+<ul>
+<li><a href="">Главная</a></li>
+<li><a href="">О нас</a></li>
+<li><a href="">Оплата и доставка</a></li>
+<li><a href="">Акции</a></li>
+<li><a href="">Новости</a></li>
+<li><a href="">Контакты</a></li>
+</ul>
+</div>
+</div>
+</header>
+<div class="content_block_wr">					<div class="page_content_wrapper">
+<div class="block_inner">
+<div class="path_block">
+<a href="">Главная</a><span>/</span>Каталог товаров
+</div>
+<div class="panel_top">
+<h1>Каталог товаров</h1>
+<div class="soart_block">
+<div class="name">Сортировать по:</div>
+<div class="soart_main">
+<div class="soart_name">По популярности</div>
+<ul class="soart_list">
+<li><a href="" class="active">По популярности</a></li>
+<li><a href="">По умолчанию</a></li>
+<li><a href="">По наличию</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="content_inner_wrapper product_list_page">
+<div class="left_panel">
+<div class="categor_list">
+<ul>
+<li><a href="">Сервисные продукты</a></li>
+<li class="opened"><a href="">Моторные масла</a></li>
+<li><a href="">Трансмиссионные масла</a></li>
+<li><a href="">Пластичные смазки</a></li>
+<li><a href="">Дизельные двигатели грузовиков</a></li>
+<li><a href="">Все товары в каталоге</a></li>
+</ul>
+</div>
+<div class="filter_panel">
+<div class="filter_btn_mobile">Парметры товаров</div>
+<div class="filter_panel_inner">
+<div class="filter_field active">
+<div class="filter_field_name">Тип масла</div>
+<div class="filter_field_body">
+<ul>
+<li><label><input type="checkbox"><i></i>Премиальное синтетическое</label></li>
+<li><label><input type="checkbox"><i></i>Синтетическое</label></li>
+<li><label><input type="checkbox"><i></i>Полусинтетическое</label></li>
+</ul>
+</div>
+</div>
+<div class="filter_field active">
+<div class="filter_field_name">Двигатель</div>
+<div class="filter_field_body">
+<ul>
+<li><label><input type="checkbox"><i></i>Бензиновый</label></li>
+<li><label><input type="checkbox"><i></i>Газовый</label></li>
+<li><label><input type="checkbox"><i></i>Дизельный</label></li>
+</ul>
+</div>
+</div>
+<div class="filter_field active">
+<div class="filter_field_name">Вязкость по SAE</div>
+<div class="filter_field_body">
+<ul>
+<li><label><input type="checkbox"><i></i>OW-20</label></li>
+<li><label><input type="checkbox"><i></i>OW-30</label></li>
+<li><label><input type="checkbox"><i></i>5W-30</label></li>
+<li><label><input type="checkbox"><i></i>5W-40</label></li>
+<li><label><input type="checkbox"><i></i>10W-40</label></li>
+</ul>
+</div>
+</div>
+<div class="filter_field">
+<div class="filter_field_name">Бренд</div>
+<div class="filter_field_body">
+<ul>
+<li><label><input type="checkbox"><i></i>Название бренда</label></li>
+<li><label><input type="checkbox"><i></i>Второй бренд</label></li>
+<li><label><input type="checkbox"><i></i>Третий бренд</label></li>
+</ul>
+</div>
+</div>
+<div class="filter_field">
+<div class="filter_field_name">Классификация по API</div>
+<div class="filter_field_body">
+<ul>
+<li><label><input type="checkbox"><i></i>Название бренда</label></li>
+<li><label><input type="checkbox"><i></i>Второй бренд</label></li>
+<li><label><input type="checkbox"><i></i>Третий бренд</label></li>
+</ul>
+</div>
+</div>
+<div class="filter_field">
+<div class="filter_field_name">ACEA</div>
+<div class="filter_field_body">
+<ul>
+<li><label><input type="checkbox"><i></i>Название бренда</label></li>
+<li><label><input type="checkbox"><i></i>Второй бренд</label></li>
+<li><label><input type="checkbox"><i></i>Третий бренд</label></li>
+</ul>
+</div>
+</div>
+<div class="filter_field">
+<div class="filter_field_name">ILSAC</div>
+<div class="filter_field_body">
+<ul>
+<li><label><input type="checkbox"><i></i>Название бренда</label></li>
+<li><label><input type="checkbox"><i></i>Второй бренд</label></li>
+<li><label><input type="checkbox"><i></i>Третий бренд</label></li>
+</ul>
+</div>
+</div>
+<div class="prices_filter">
+<div class="filter_field_name">Цена</div>
+<div class="filter_field_body">
+<div class="prices_field">
+<div class="from"><input type="text" value="От 1000"></div>
+<span></span>
+<div class="to"><input type="text" value="До 30 000"></div>
+</div>
+</div>
+</div>
+<button class="fiter_btn_result">Показать</button>
+<div class="filter_btn_reset">Сбросить фильтр</div>
+<div class="result_block">
+<div class="text">Найдено 10 товаров</div>
+<a href="" class="link">Показать</a>
+</div>
+</div>
+</div>
+</div>
+<div class="right_content">
+<div class="product_list"><div class="product_item">
+<div class="image">
+<div class="stock">Товар в наличии</div>
+<div class="wish_button"></div>
+<a href="">
+<img src="files/image.png" alt="">
+</a>
+</div>
+<div class="name">
+<a href="">Масло моторное TEBOIL DIAMOND CARAT III 5W-30 синтетическое</a>
+</div>
+<div class="params_size">
+<ul>
+<li>1л</li>
+<li>2л</li>
+<li class="select">3л</li>
+<li>4л</li>
+<li>5л</li>
+</ul>
+</div>
+<div class="product_bottom">
+<div class="price">
+<div class="current_price">9 720 ₽</div>
+<div class="old_price"><span>10 000 ₽</span></div>
+</div>
+<div class="product_action">
+<button class="btn_button buy small"><span>Купить</span></button>
+<div class="amount_product">
+<button class="btn_button grey quantity">-</button>
+<input type="text" value="1">
+<button class="btn_button grey quantity">+</button>
+</div>
+</div>
+</div>
+</div><div class="product_item">
+<div class="image">
+<div class="stock">Товар в наличии</div>
+<div class="wish_button"></div>
+<a href="">
+<img src="files/image.png" alt="">
+</a>
+</div>
+<div class="name">
+<a href="">Масло моторное TEBOIL DIAMOND CARAT III 5W-30 синтетическое</a>
+</div>
+<div class="params_size">
+<ul>
+<li>1л</li>
+<li>2л</li>
+<li class="select">3л</li>
+<li>4л</li>
+<li>5л</li>
+</ul>
+</div>
+<div class="product_bottom">
+<div class="price">
+<div class="current_price">9 720 ₽</div>
+<div class="old_price"><span>10 000 ₽</span></div>
+</div>
+<div class="product_action">
+<button class="btn_button buy small"><span>Купить</span></button>
+<div class="amount_product">
+<button class="btn_button grey quantity">-</button>
+<input type="text" value="1">
+<button class="btn_button grey quantity">+</button>
+</div>
+</div>
+</div>
+</div><div class="product_item">
+<div class="image">
+<div class="stock">Товар в наличии</div>
+<div class="wish_button"></div>
+<a href="">
+<img src="files/image.png" alt="">
+</a>
+</div>
+<div class="name">
+<a href="">Масло моторное TEBOIL DIAMOND CARAT III 5W-30 синтетическое</a>
+</div>
+<div class="params_size">
+<ul>
+<li>1л</li>
+<li>2л</li>
+<li class="select">3л</li>
+<li>4л</li>
+<li>5л</li>
+</ul>
+</div>
+<div class="product_bottom">
+<div class="price">
+<div class="current_price">9 720 ₽</div>
+<div class="old_price"><span>10 000 ₽</span></div>
+</div>
+<div class="product_action">
+<button class="btn_button buy small"><span>Купить</span></button>
+<div class="amount_product">
+<button class="btn_button grey quantity">-</button>
+<input type="text" value="1">
+<button class="btn_button grey quantity">+</button>
+</div>
+</div>
+</div>
+</div><div class="product_item">
+<div class="image">
+<div class="stock">Товар в наличии</div>
+<div class="wish_button"></div>
+<a href="">
+<img src="files/image.png" alt="">
+</a>
+</div>
+<div class="name">
+<a href="">Масло моторное TEBOIL DIAMOND CARAT III 5W-30 синтетическое</a>
+</div>
+<div class="params_size">
+<ul>
+<li>1л</li>
+<li>2л</li>
+<li class="select">3л</li>
+<li>4л</li>
+<li>5л</li>
+</ul>
+</div>
+<div class="product_bottom">
+<div class="price">
+<div class="current_price">9 720 ₽</div>
+<div class="old_price"><span>10 000 ₽</span></div>
+</div>
+<div class="product_action">
+<button class="btn_button buy small"><span>Купить</span></button>
+<div class="amount_product">
+<button class="btn_button grey quantity">-</button>
+<input type="text" value="1">
+<button class="btn_button grey quantity">+</button>
+</div>
+</div>
+</div>
+</div><div class="product_item">
+<div class="image">
+<div class="stock">Товар в наличии</div>
+<div class="wish_button"></div>
+<a href="">
+<img src="files/image.png" alt="">
+</a>
+</div>
+<div class="name">
+<a href="">Масло моторное TEBOIL DIAMOND CARAT III 5W-30 синтетическое</a>
+</div>
+<div class="params_size">
+<ul>
+<li>1л</li>
+<li>2л</li>
+<li class="select">3л</li>
+<li>4л</li>
+<li>5л</li>
+</ul>
+</div>
+<div class="product_bottom">
+<div class="price">
+<div class="current_price">9 720 ₽</div>
+<div class="old_price"><span>10 000 ₽</span></div>
+</div>
+<div class="product_action">
+<button class="btn_button buy small"><span>Купить</span></button>
+<div class="amount_product">
+<button class="btn_button grey quantity">-</button>
+<input type="text" value="1">
+<button class="btn_button grey quantity">+</button>
+</div>
+</div>
+</div>
+</div><div class="product_item">
+<div class="image">
+<div class="stock">Товар в наличии</div>
+<div class="wish_button"></div>
+<a href="">
+<img src="files/image.png" alt="">
+</a>
+</div>
+<div class="name">
+<a href="">Масло моторное TEBOIL DIAMOND CARAT III 5W-30 синтетическое</a>
+</div>
+<div class="params_size">
+<ul>
+<li>1л</li>
+<li>2л</li>
+<li class="select">3л</li>
+<li>4л</li>
+<li>5л</li>
+</ul>
+</div>
+<div class="product_bottom">
+<div class="price">
+<div class="current_price">9 720 ₽</div>
+<div class="old_price"><span>10 000 ₽</span></div>
+</div>
+<div class="product_action">
+<button class="btn_button buy small"><span>Купить</span></button>
+<div class="amount_product">
+<button class="btn_button grey quantity">-</button>
+<input type="text" value="1">
+<button class="btn_button grey quantity">+</button>
+</div>
+</div>
+</div>
+</div><div class="product_item">
+<div class="image">
+<div class="stock">Товар в наличии</div>
+<div class="wish_button"></div>
+<a href="">
+<img src="files/image.png" alt="">
+</a>
+</div>
+<div class="name">
+<a href="">Масло моторное TEBOIL DIAMOND CARAT III 5W-30 синтетическое</a>
+</div>
+<div class="params_size">
+<ul>
+<li>1л</li>
+<li>2л</li>
+<li class="select">3л</li>
+<li>4л</li>
+<li>5л</li>
+</ul>
+</div>
+<div class="product_bottom">
+<div class="price">
+<div class="current_price">9 720 ₽</div>
+<div class="old_price"><span>10 000 ₽</span></div>
+</div>
+<div class="product_action">
+<button class="btn_button buy small"><span>Купить</span></button>
+<div class="amount_product">
+<button class="btn_button grey quantity">-</button>
+<input type="text" value="1">
+<button class="btn_button grey quantity">+</button>
+</div>
+</div>
+</div>
+</div><div class="product_item">
+<div class="image">
+<div class="stock">Товар в наличии</div>
+<div class="wish_button"></div>
+<a href="">
+<img src="files/image.png" alt="">
+</a>
+</div>
+<div class="name">
+<a href="">Масло моторное TEBOIL DIAMOND CARAT III 5W-30 синтетическое</a>
+</div>
+<div class="params_size">
+<ul>
+<li>1л</li>
+<li>2л</li>
+<li class="select">3л</li>
+<li>4л</li>
+<li>5л</li>
+</ul>
+</div>
+<div class="product_bottom">
+<div class="price">
+<div class="current_price">9 720 ₽</div>
+<div class="old_price"><span>10 000 ₽</span></div>
+</div>
+<div class="product_action">
+<button class="btn_button buy small"><span>Купить</span></button>
+<div class="amount_product">
+<button class="btn_button grey quantity">-</button>
+<input type="text" value="1">
+<button class="btn_button grey quantity">+</button>
+</div>
+</div>
+</div>
+</div><div class="product_item">
+<div class="image">
+<div class="stock">Товар в наличии</div>
+<div class="wish_button"></div>
+<a href="">
+<img src="files/image.png" alt="">
+</a>
+</div>
+<div class="name">
+<a href="">Масло моторное TEBOIL DIAMOND CARAT III 5W-30 синтетическое</a>
+</div>
+<div class="params_size">
+<ul>
+<li>1л</li>
+<li>2л</li>
+<li class="select">3л</li>
+<li>4л</li>
+<li>5л</li>
+</ul>
+</div>
+<div class="product_bottom">
+<div class="price">
+<div class="current_price">9 720 ₽</div>
+<div class="old_price"><span>10 000 ₽</span></div>
+</div>
+<div class="product_action">
+<button class="btn_button buy small"><span>Купить</span></button>
+<div class="amount_product">
+<button class="btn_button grey quantity">-</button>
+<input type="text" value="1">
+<button class="btn_button grey quantity">+</button>
+</div>
+</div>
+</div>
+</div><div class="product_item">
+<div class="image">
+<div class="stock">Товар в наличии</div>
+<div class="wish_button"></div>
+<a href="">
+<img src="files/image.png" alt="">
+</a>
+</div>
+<div class="name">
+<a href="">Масло моторное TEBOIL DIAMOND CARAT III 5W-30 синтетическое</a>
+</div>
+<div class="params_size">
+<ul>
+<li>1л</li>
+<li>2л</li>
+<li class="select">3л</li>
+<li>4л</li>
+<li>5л</li>
+</ul>
+</div>
+<div class="product_bottom">
+<div class="price">
+<div class="current_price">9 720 ₽</div>
+<div class="old_price"><span>10 000 ₽</span></div>
+</div>
+<div class="product_action">
+<button class="btn_button buy small"><span>Купить</span></button>
+<div class="amount_product">
+<button class="btn_button grey quantity">-</button>
+<input type="text" value="1">
+<button class="btn_button grey quantity">+</button>
+</div>
+</div>
+</div>
+</div><div class="product_item">
+<div class="image">
+<div class="stock">Товар в наличии</div>
+<div class="wish_button"></div>
+<a href="">
+<img src="files/image.png" alt="">
+</a>
+</div>
+<div class="name">
+<a href="">Масло моторное TEBOIL DIAMOND CARAT III 5W-30 синтетическое</a>
+</div>
+<div class="params_size">
+<ul>
+<li>1л</li>
+<li>2л</li>
+<li class="select">3л</li>
+<li>4л</li>
+<li>5л</li>
+</ul>
+</div>
+<div class="product_bottom">
+<div class="price">
+<div class="current_price">9 720 ₽</div>
+<div class="old_price"><span>10 000 ₽</span></div>
+</div>
+<div class="product_action">
+<button class="btn_button buy small"><span>Купить</span></button>
+<div class="amount_product">
+<button class="btn_button grey quantity">-</button>
+<input type="text" value="1">
+<button class="btn_button grey quantity">+</button>
+</div>
+</div>
+</div>
+</div><div class="product_item">
+<div class="image">
+<div class="stock">Товар в наличии</div>
+<div class="wish_button"></div>
+<a href="">
+<img src="files/image.png" alt="">
+</a>
+</div>
+<div class="name">
+<a href="">Масло моторное TEBOIL DIAMOND CARAT III 5W-30 синтетическое</a>
+</div>
+<div class="params_size">
+<ul>
+<li>1л</li>
+<li>2л</li>
+<li class="select">3л</li>
+<li>4л</li>
+<li>5л</li>
+</ul>
+</div>
+<div class="product_bottom">
+<div class="price">
+<div class="current_price">9 720 ₽</div>
+<div class="old_price"><span>10 000 ₽</span></div>
+</div>
+<div class="product_action">
+<button class="btn_button buy small"><span>Купить</span></button>
+<div class="amount_product">
+<button class="btn_button grey quantity">-</button>
+<input type="text" value="1">
+<button class="btn_button grey quantity">+</button>
+</div>
+</div>
+</div>
+</div></div>
+<div class="btn_nore_product">посмотреть еще</div>
+<div class="page_list">
+<ul>
+<li><a href="" class="arrow arrow_left"></a></li>
+<li><span class="number">1</span></li>
+<li><a href="" class="number">2</a></li>
+<li><a href="" class="number">3</a></li>
+<li><a href="" class="number">4</a></li>
+<li><a href="" class="arrow arrow_right"></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="popular_products">
+<div class="block_inner">
+<div class="title_block">
+<div class="title">Популярные товары</div>
+<a href="" class="btn_button border_arrow">Все товары категории</a>
+</div>
+<div class="inner"><div class="product_item">
+<div class="image">
+<div class="stock">Товар в наличии</div>
+<div class="wish_button"></div>
+<a href="">
+<img src="files/image.png" alt="">
+</a>
+</div>
+<div class="name">
+<a href="">Масло моторное TEBOIL DIAMOND CARAT III 5W-30 синтетическое</a>
+</div>
+<div class="params_size">
+<ul>
+<li>1л</li>
+<li>2л</li>
+<li class="select">3л</li>
+<li>4л</li>
+<li>5л</li>
+</ul>
+</div>
+<div class="product_bottom">
+<div class="price">
+<div class="current_price">9 720 ₽</div>
+<div class="old_price"><span>10 000 ₽</span></div>
+</div>
+<div class="product_action">
+<button class="btn_button buy small"><span>Купить</span></button>
+<div class="amount_product">
+<button class="btn_button grey quantity">-</button>
+<input type="text" value="1">
+<button class="btn_button grey quantity">+</button>
+</div>
+</div>
+</div>
+</div><div class="product_item">
+<div class="image">
+<div class="stock">Товар в наличии</div>
+<div class="wish_button"></div>
+<a href="">
+<img src="files/image.png" alt="">
+</a>
+</div>
+<div class="name">
+<a href="">Масло моторное TEBOIL DIAMOND CARAT III 5W-30 синтетическое</a>
+</div>
+<div class="params_size">
+<ul>
+<li>1л</li>
+<li>2л</li>
+<li class="select">3л</li>
+<li>4л</li>
+<li>5л</li>
+</ul>
+</div>
+<div class="product_bottom">
+<div class="price">
+<div class="current_price">9 720 ₽</div>
+<div class="old_price"><span>10 000 ₽</span></div>
+</div>
+<div class="product_action">
+<button class="btn_button buy small"><span>Купить</span></button>
+<div class="amount_product">
+<button class="btn_button grey quantity">-</button>
+<input type="text" value="1">
+<button class="btn_button grey quantity">+</button>
+</div>
+</div>
+</div>
+</div><div class="product_item">
+<div class="image">
+<div class="stock">Товар в наличии</div>
+<div class="wish_button"></div>
+<a href="">
+<img src="files/image.png" alt="">
+</a>
+</div>
+<div class="name">
+<a href="">Масло моторное TEBOIL DIAMOND CARAT III 5W-30 синтетическое</a>
+</div>
+<div class="params_size">
+<ul>
+<li>1л</li>
+<li>2л</li>
+<li class="select">3л</li>
+<li>4л</li>
+<li>5л</li>
+</ul>
+</div>
+<div class="product_bottom">
+<div class="price">
+<div class="current_price">9 720 ₽</div>
+<div class="old_price"><span>10 000 ₽</span></div>
+</div>
+<div class="product_action">
+<button class="btn_button buy small"><span>Купить</span></button>
+<div class="amount_product">
+<button class="btn_button grey quantity">-</button>
+<input type="text" value="1">
+<button class="btn_button grey quantity">+</button>
+</div>
+</div>
+</div>
+</div><div class="product_item">
+<div class="image">
+<div class="stock">Товар в наличии</div>
+<div class="wish_button"></div>
+<a href="">
+<img src="files/image.png" alt="">
+</a>
+</div>
+<div class="name">
+<a href="">Масло моторное TEBOIL DIAMOND CARAT III 5W-30 синтетическое</a>
+</div>
+<div class="params_size">
+<ul>
+<li>1л</li>
+<li>2л</li>
+<li class="select">3л</li>
+<li>4л</li>
+<li>5л</li>
+</ul>
+</div>
+<div class="product_bottom">
+<div class="price">
+<div class="current_price">9 720 ₽</div>
+<div class="old_price"><span>10 000 ₽</span></div>
+</div>
+<div class="product_action">
+<button class="btn_button buy small"><span>Купить</span></button>
+<div class="amount_product">
+<button class="btn_button grey quantity">-</button>
+<input type="text" value="1">
+<button class="btn_button grey quantity">+</button>
+</div>
+</div>
+</div>
+</div></div>
+<a href="" class="btn_button border_arrow">Все товары категории</a>
+</div>
+</div></div>
+<footer class="footer">
+<div class="footer_top">
+<div class="block_inner">
+<div class="logo">
+<a href="">
+<img src="files/logo_footer.png" alt="">
+</a>
+</div>
+<div class="footer_menu">
+<ul>
+<li><a href="">Главная</a></li>
+<li><a href="">О нас</a></li>
+<li><a href="">Оплата и доставка</a></li>
+<li><a href="">Акции</a></li>
+<li><a href="">Новости</a></li>
+<li><a href="">Контакты</a></li>
+</ul>
+</div>
+<div class="contacts_block">
+<div class="item">
+<div class="name">Офис</div>
+<div class="body">г. Новосибирск, ул. Станционная, 78, площадь 360 кв.м.</div>
+</div>
+<div class="item phone">
+<div class="name">Телефон</div>
+<div class="body"><a href="tel:8 (3852) 50-60-91">8 (3852) 50-60-91</a><br>Ежедневно с 9:00 до 18:00</div>
+</div>
+<div class="item">
+<div class="name">Склад</div>
+<div class="body">г. Новосибирск, ул. Станционная, 78</div>
+</div>
+</div>
+<div class="text_footer">
+<div class="body">Вся информация на странице предназначена только для ознакомления и носит справочный характер, не является публичной офертой или коммерческим предложением.</div>
+</div>
+</div>
+</div>
+<div class="footer_bottom">
+<div class="block_inner">
+<div class="copy">© 2023 Маслодон</div>
+<div class="dev_copy">Разработка сайта  —  <a href="">Контора Громова</a></div>
+</div>
+</div>
+</footer>					
+</div>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
