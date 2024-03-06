@@ -1028,7 +1028,7 @@ img, textarea, input, table {
 .menu_top {
     flex: 1 1 auto;
     padding: 0 20px;
-    text-align: center;
+    text-align: right;
 
     ul {
         padding: 0;
@@ -1211,6 +1211,17 @@ img, textarea, input, table {
 
 .header {
 
+    .header_btn {
+        text-transform: uppercase;
+        padding: 13px 24px;
+        margin: 0 27px 0 13px;
+        font-size: 14px;
+
+        @media all and (max-width: 1024px) {
+            display: none;
+        }
+    }
+
     &_top {
         background: #fff;
         padding: 0 20px;
@@ -1218,7 +1229,7 @@ img, textarea, input, table {
         .block_inner {
             display: flex;
             align-items: center;
-            padding: 9px 0;
+            padding: 0 0;
         }
 
         .logo_mob {
@@ -1230,6 +1241,7 @@ img, textarea, input, table {
                 display: inline-block;
                 vertical-align: top;
                 text-decoration: none;
+                max-width: 121px;
             }
         }
 
@@ -1470,7 +1482,7 @@ img, textarea, input, table {
                         left: -73px;
                         right: 70px;
                         background-size: cover;
-                        background-position: 0 50%;
+                        background-position: 100% 100%;
                         background-repeat: no-repeat;
                         transform: skewX(20deg);
                     }
