@@ -1321,22 +1321,7 @@ img, textarea, input, table {
                 display: flex;
                 align-items: center;
                 text-decoration: none;
-                gap: 13px;
-
-                img {
-                    max-width: 63px;
-                }
-
-                span {
-                    color: #333;
-                    text-transform: uppercase;
-                    flex: 1 1 auto;
-                    font-size: 16px;
-                    font-weight: 700;
-                    line-height: 16px;
-                    letter-spacing: 0em;
-                    text-align: left;
-                }
+                
             }
         }
 
