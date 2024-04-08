@@ -1336,6 +1336,12 @@ img, textarea, input, table {
     &_bottom {
         padding: 0 20px;
 
+        @media all and (min-width: 1025px) {
+            .header_btn {
+                display: none;
+            }
+        }
+
         .menu_top {
             display: none;
         }
@@ -1359,7 +1365,7 @@ img, textarea, input, table {
         }
 
         @media all and (max-width: 1024px) {
-            padding: 20px 20px 0;
+            padding: 20px 20px 1px;
 
             .block_inner {
                 padding: 0;
@@ -1390,6 +1396,14 @@ img, textarea, input, table {
                         }
                     }
                 }
+            }
+
+            .header_btn {
+                display: block;
+                margin: 6px auto 20px;
+                max-width: 316px;
+                background: #FFFFFF;
+                color: #E74142;
             }
         }
 
