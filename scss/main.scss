@@ -1209,6 +1209,27 @@ img, textarea, input, table {
     }
 }
 
+.shop_actions_btn {
+    display: flex;
+    align-items: center;
+
+    @media all and (max-width: 767px) {
+        padding: 11px 10px 9px;
+        background: #FCFCFC;
+        justify-content: center;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        gap: 50px;
+        z-index: 101;
+
+        .wish_btn,.login_btn {
+            margin: 0;
+        }
+    }
+}
+
 .header {
 
     .header_btn {
@@ -1404,10 +1425,6 @@ img, textarea, input, table {
                         }
                     }
                 }
-            }
-
-            .wish_btn,.login_btn,.cart_mini {
-                display: none;
             }
         }
     }
@@ -2912,6 +2929,11 @@ img, textarea, input, table {
 
 .footer {
     background: #e5e5e9;
+
+    @media all and (max-width: 767px) {
+        padding-bottom: 60px;
+    }
+
     &_top {
         padding: 47px 20px;
 
